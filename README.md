@@ -1,0 +1,2 @@
+# PyTorch_BERT_MultiHead_NER
+使用多头的思想来进行命名实体识别
