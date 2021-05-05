@@ -3,6 +3,18 @@
 2、模型的具体思路描述可以见[知乎](https://zhuanlan.zhihu.com/p/369784302),<br>
 3、训练数据来自于MSRA命名实体识别训练语料，已经做相应的修改转换。
 
+```
+# 环境要求
+```
+pytorch >=1.6.0
+transformers>=3.4.0
+```
+# 运行步骤
+1、去huggingface[官网](https://huggingface.co/models)下载BERT预训练权重，然后并放在`./pretrained_model/`文件夹下<br>
+2、在`./utils/arguments_parse.py`中修改BERT预训练模型的路径<br>
+3、运行`train.py`进行训练<br>
+4、运行`predict.py`进行预测
+
 # 项目结构
 ```
 │  eval_func.py  
@@ -42,14 +54,4 @@
 └─utils
         arguments_parse.py  #设置模型训练相关的参数
         logger.py           #存放日志等脚本
-```
-# 环境要求
-```
-pytorch >=1.6.0
-transformers>=3.4.0
-```
-# 运行步骤
-1、去huggingface[官网](https://huggingface.co/models)下载BERT预训练权重，然后并放在`./pretrained_model/`文件夹下<br>
-2、在`./utils/arguments_parse.py`中修改BERT预训练模型的路径<br>
-3、运行`train.py`进行训练<br>
-4、运行`predict.py`进行预测
+
