@@ -3,7 +3,7 @@
 2、模型的具体思路描述可以见[知乎](https://zhuanlan.zhihu.com/p/369784302),<br>
 3、训练数据来自于MSRA命名实体识别训练语料，已经做相应的修改转换。
 
-```
+
 # 环境要求
 ```
 pytorch >=1.6.0
@@ -54,4 +54,4 @@ transformers>=3.4.0
 └─utils
         arguments_parse.py  #设置模型训练相关的参数
         logger.py           #存放日志等脚本
-
+```
